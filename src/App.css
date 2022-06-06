@@ -1,21 +1,11 @@
 .App {
-       display: grid;
-       grid-template-columns: 1fr 10fr;
-       grid-template-rows: 1fr 10fr;
-       grid-gap: 10px;
-       grid-template-areas:
-          "h h"
-          "c nav";
-}
-
-.Header {
-   grid-area: h;
-}
-
-.NavBar {
-   grid-area: nav;
-}
-
-.Content {
-   grid-area: c;
+   background-color: #F2F2F2;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 10fr;
+    grid-template-rows: 120px 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+       "h h"
+       "n p";
 }

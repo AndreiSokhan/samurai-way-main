@@ -5,11 +5,14 @@ export function NavBar() {
    return (
       <div className={s.NavBar}>
          NAVBAR
-         <div>Profile</div>
-         <div>Message</div>
-         <div>News</div>
-         <div>3</div>
-         <div>4</div>
+         <div>
+            <ul>
+               <li><a>Profile</a></li>
+               <li><a>Message</a></li>
+               <li><a>News</a></li>
+               <li><a>Settings</a></li>
+            </ul>
+         </div>
       </div>
    );
 }
