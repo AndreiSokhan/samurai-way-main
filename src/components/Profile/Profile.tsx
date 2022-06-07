@@ -10,7 +10,7 @@ export function Profile() {
             <img src="https://cdn.pixabay.com/photo/2016/01/24/02/43/banner-1158378__340.jpg" alt="header"/>
          </div>
          <div className={s.ProfileMyself}>
-            <img className={s.ProfileIcon} src="https://texterra.ru/upload/medialibrary/ba8/sucqzb796wd8o9r9c2rhtsaq36jeyom0/3_1.webp" alt="photo"/>
+            <img className={s.ProfileIcon} src="https://img.championat.com/i/o/m/16412038301833088240.jpg" alt="photo"/>
             <MyPosts/>
          </div>
          <div></div>
