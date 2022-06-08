@@ -4,7 +4,7 @@ import {MyPosts} from "./MyPosts/MyPosts";
 
 export function Profile() {
    return (
-      <div className={s.Profile}>
+      <div>
          <div>Main CONTENT our social network</div>
          <div className={s.ProfileHeaderImg}>
             <img src="https://cdn.pixabay.com/photo/2016/01/24/02/43/banner-1158378__340.jpg" alt="header"/>
@@ -13,7 +13,6 @@ export function Profile() {
             <img className={s.ProfileIcon} src="https://img.championat.com/i/o/m/16412038301833088240.jpg" alt="photo"/>
             <MyPosts/>
          </div>
-         <div></div>
       </div>
    );
 }
