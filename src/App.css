@@ -10,7 +10,7 @@
        "n c";
 }
 
-.App-wrapper-content {
-   background-color: red;
-       grid-area: c;
+.AppWrapperContent {
+    grid-area: c;
+    background-color: Gainsboro;
 }

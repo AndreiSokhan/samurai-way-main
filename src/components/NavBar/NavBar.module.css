@@ -1,5 +1,11 @@
 .NavBar {
-   background-color: blue;
-       grid-area: n;
+    background-color: lightblue;
+    grid-area: n;
+    padding: 20px;
 }
 
+
+
+.NavBarItem a.active {
+        color:FireBrick;
+}
