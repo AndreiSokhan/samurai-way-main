@@ -1,3 +1,7 @@
+.Post{
+    margin: 10px;
+}
+
 .PostWrapper {
     display: flex;
     align-items: center;

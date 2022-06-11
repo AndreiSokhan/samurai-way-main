@@ -4,17 +4,4 @@
     display: grid;
         grid-template-columns: 2fr 10fr;
         grid-gap: 10px;
-
-}
-
-.DialogsItems{
-    padding:20px;
-}
-
-.Dialog{
-
-}
-
-.ChatItems{
-    padding:20px;
 }

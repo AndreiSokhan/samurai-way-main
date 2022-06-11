@@ -1,0 +1,21 @@
+.ProfileInfo{
+
+}
+
+.ProfileMyself{
+    display:flex;
+    flex-direction:row;
+    padding:10px;
+}
+
+.ProfilePage{
+    padding:10px;
+}
+
+.ProfileIcon{
+max-width: 200px;
+max-height: 200px;}
+
+.ProfilePage{
+
+}
