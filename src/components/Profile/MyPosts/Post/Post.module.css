@@ -13,3 +13,11 @@ max-width: 100px;
 max-height: 80px;
 border-radius: 50px;
 }
+
+.PostLike{
+padding:10px
+}
+
+.PostDISLike {
+padding:10px
+}

@@ -3,12 +3,12 @@ import s from './Chat.module.css';
 import {NavLink} from "react-router-dom";
 
 type ChatType = {
-   text: string
+   message: string
 }
 
 export const Chat = (props: ChatType) => {
 
    return (
-      <div className={s.Chat}>{props.text}</div>
+      <div className={s.Chat}>{props.message}</div>
    );
 };

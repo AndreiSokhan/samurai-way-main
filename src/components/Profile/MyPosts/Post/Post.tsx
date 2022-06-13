@@ -1,12 +1,12 @@
 import React from 'react';
 import s from './Post.module.css';
 
-type MyPostType={
-   message:string
-   likeCount:number
+type MyPostType = {
+   message: string
+   likesCount: number
 }
 
-export const Post = (props:MyPostType) => {
+export const Post = (props: MyPostType) => {
    return (
       <div className={s.Post}>
          <div className={s.PostWrapper}>
@@ -16,8 +16,8 @@ export const Post = (props:MyPostType) => {
             <p>{props.message}</p>
          </div>
          <div>
-            <span>Like{props.likeCount}</span>
-            <span>DISLike</span>
+            <span className={s.PostLike}>Like{props.likesCount}</span>
+            <span className={s.PostDISLike}>DISLike</span>
          </div>
       </div>
    );
