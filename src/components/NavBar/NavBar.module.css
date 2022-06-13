@@ -4,7 +4,9 @@
     padding: 20px;
 }
 
-
+.NavBarItem {
+    padding:5px;
+}
 
 .NavBarItem a.active {
         color:FireBrick;

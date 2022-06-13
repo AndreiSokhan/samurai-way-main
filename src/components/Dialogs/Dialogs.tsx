@@ -23,27 +23,19 @@ export const Dialogs = () => {
       {id: '4', message: 'What you thin about IT-KAMASUTRA?'}
    ]
 
-   //уровень UI
 
-      // <Post message={postData[0].message} likesCount={postData[0].likesCount}/>
+   let dialogsEl = dialogsData.map((d) => <DialogsItems name={d.name} id={d.id}/>);
+
+   let messagesEl = messagesData.map((m) =>
+      <Chat message={m.message}/>
+   );
+
+   //уровень UI
 
    return (
       <div className={s.Dialogs}>
-         <div className={s.DialogsItems}>
-            <DialogsItems name={dialogsData[0].name} id={dialogsData[0].id}/>
-            <DialogsItems name={dialogsData[1].name} id={dialogsData[1].id}/>
-            <DialogsItems name={dialogsData[2].name} id={dialogsData[2].id}/>
-            <DialogsItems name={dialogsData[3].name} id={dialogsData[3].id}/>
-            <DialogsItems name={dialogsData[4].name} id={dialogsData[4].id}/>
-         </div>
-
-         <div className={s.ChatItems}>
-            <Chat message={messagesData[0].message}/>
-            <Chat message={messagesData[1].message}/>
-            <Chat message={messagesData[2].message}/>
-            <Chat message={messagesData[3].message}/>
-         </div>
-
+         <div className={s.DialogsItems}>{dialogsEl}</div>
+         <div className={s.ChatItems}>{messagesEl}</div>
       </div>
    );
 };
