@@ -1,13 +1,11 @@
 import React from 'react';
 import s from './Dialogs.module.css';
-import {NavLink} from "react-router-dom";
 import {DialogsItems} from "./DialogsItems/DialogsItems";
 import {Chat} from "./Chat/Chat";
-import {Post} from "../Profile/MyPosts/Post/Post";
 
 export const Dialogs = () => {
 
-   //уровень бизнес логики
+   //уровень бизнес логики (BLL - Business Logic Layer) (в данное время этим занимается Redux)
    let dialogsData = [
       {id: '1', name: 'Dima'},
       {id: '2', name: 'Max'},
@@ -30,8 +28,7 @@ export const Dialogs = () => {
       <Chat message={m.message}/>
    );
 
-   //уровень UI
-
+   //уровень UI (User interface)
    return (
       <div className={s.Dialogs}>
          <div className={s.DialogsItems}>{dialogsEl}</div>
