@@ -9,7 +9,20 @@ import {News} from "./components/News/News";
 import {Music} from "./components/Music/Music";
 import {Settings} from "./components/Settings/Settings";
 
-function App() {
+export type PostPropsType = {
+   id: number
+   message: string
+   likesCount: number
+}
+
+type PostsDataPropsType={
+   posts:Array<PostPropsType>
+}
+
+
+
+function App(props:PostsDataPropsType) {
+
    return (
       <BrowserRouter>
          <div className="App">
@@ -17,7 +30,7 @@ function App() {
             <NavBar/>
             <div className='AppWrapperContent'>
                <Route path='/dialogs' render={() => <Dialogs/>}/>
-               <Route path='/profile' render={() => <Profile/>}/>
+               <Route path='/profile' render={() => <Profile posts={props.posts}/>}/>
                <Route path='/news' render={() => <News/>}/>
                <Route path='/music' render={() => <Music/>}/>
                <Route path='/settings' render={() => <Settings/>}/>
