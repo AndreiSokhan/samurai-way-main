@@ -1,17 +1,14 @@
 import React from 'react';
 import s from './Dialogs.module.css';
-import {DialogsItems} from "./DialogsItems/DialogsItems";
+import {DialogItem} from "./DialogsItems/DialogItem";
 import {Chat} from "./Chat/Chat";
 
-export const Dialogs = () => {
 
-   //уровень бизнес логики (BLL - Business Logic Layer) (в данное время этим занимается Redux)
+export const Dialogs = (props:) => {
 
+   let dialogsEl = props.dialogs.map((d) => <DialogItem name={d.name} id={d.id}/>);
 
-
-   let dialogsEl = dialogsData.map((d) => <DialogsItems name={d.name} id={d.id}/>);
-
-   let messagesEl = messagesData.map((m) =>
+   let messagesEl = props.messages.map((m) =>
       <Chat message={m.message}/>
    );
 

@@ -2,6 +2,7 @@ import React from 'react';
 import s from './Profile.module.css';
 import {MyPosts} from "./MyPosts/MyPosts";
 import {ProfileInfo} from "./ProfileInfo/ProfileInfo";
+import state from "../../redux/state";
 
 export type PostPropsType = {
    id: number
@@ -13,7 +14,7 @@ type PostsDataPropsType={
    posts:Array<PostPropsType>
 }
 
-export const Profile:React.FC<PostsDataPropsType> = (props) => {
+export const Profile = (props:PostsDataPropsType) => {
 
    return (
       <div>
@@ -25,4 +26,3 @@ export const Profile:React.FC<PostsDataPropsType> = (props) => {
    );
 }
 
-//время 28 урока на котором остановился - 4:44 мин
